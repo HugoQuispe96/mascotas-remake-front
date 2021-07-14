@@ -3,7 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  backend: 'https://mascotas-remake-backv2.herokuapp.com',
+  GATOS: 0,
+  PERROS: 1,
+  OTROS: 2,
+  ENCONTRADA: 1,
+  PERDIDA: 0
 };
 
 /*

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { MatButtonModule } from '@angular/material/button';
 import { AnunciosRoutingModule } from './anuncios-routing.module';
 import { MascotaPerdidasGatosComponent } from './components/mascota-perdidas-gatos/mascota-perdidas-gatos.component';
 import { MascotaPerdidasPerrosComponent } from './components/mascota-perdidas-perros/mascota-perdidas-perros.component';
@@ -10,7 +10,7 @@ import { MascotaEncontradasPerrosComponent } from './components/mascota-encontra
 import { MascotaEncontradasOtrosComponent } from './components/mascota-encontradas-otros/mascota-encontradas-otros.component';
 import { PublicarAnuncioComponent } from './components/publicar-anuncio/publicar-anuncio.component';
 import { GestionarAnuncioComponent } from './components/gestionar-anuncio/gestionar-anuncio.component';
-
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,9 @@ import { GestionarAnuncioComponent } from './components/gestionar-anuncio/gestio
   ],
   imports: [
     CommonModule,
-    AnunciosRoutingModule
+    AnunciosRoutingModule,
+    MatButtonModule,
+    SharedModule
   ]
 })
 export class AnunciosModule { }
